@@ -21,71 +21,14 @@ body {
   flex-direction: column;
 }
 
-.navbar {
-  background-color: var(--kavia-dark);
-  padding: 16px;
+/* NoteEase Container */
+.noteease-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--border-color);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-sizing: border-box;
-  z-index: 100;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.logo {
-  font-size: 1.25rem;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.logo-symbol {
-  color: var(--kavia-orange);
-}
-
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 24px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.hero {
-  padding-top: 120px;
-  padding-bottom: 64px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-
-.subtitle {
-  color: var(--kavia-orange);
-  font-weight: 500;
-  font-size: 1.1rem;
-}
-
-.title {
-  font-size: 3.5rem;
-  font-weight: 600;
-  line-height: 1.2;
-  margin: 0;
-}
-
-.description {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  color: var(--text-secondary);
-  max-width: 600px;
-  margin-bottom: 16px;
-}
-
+/* Button Styles */
 .btn {
   background-color: var(--kavia-orange);
   color: white;
@@ -105,4 +48,12 @@ body {
 .btn-large {
   padding: 12px 24px;
   font-size: 1.1rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .noteease-container {
+    flex-direction: column;
+    height: auto;
+  }
 }
